@@ -5,7 +5,7 @@ import requests
 
 # replace testurl.com with the url you want to use.
 # requests.get downloads the webpage and stores it as a variable
-html = requests.get('http://10.10.67.14/static/index.html').text
+html = requests.get('http://<ip_addr>/static/index.html').text
 
 # this parses the webpage into something that beautifulsoup can read over
 soup = BeautifulSoup(html, "lxml")
